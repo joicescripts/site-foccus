@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    padding: 100px 300px;
+}
+
+.input-padrao {
+    border-radius: 16px;
+    border: none;
+
+    height: 32px;
+}
+
+@media screen and (min-width: 1024px){}

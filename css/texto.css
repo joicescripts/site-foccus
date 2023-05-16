@@ -1,0 +1,45 @@
+section.module.content {
+    padding: 68px 40px;
+    background-color: var(--cinza-claro);
+  }
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section.module p {
+    font-size: 18px;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  section.module.content {
+    background-image: url(../img/fundo_banner_Mesa\ de\ trabajo\ 1.jpg);
+    background-position: 70%;
+    background-repeat: no-repeat;
+    background-size: 100em;
+  }
+
+  .container {
+    width: 50%;    
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  
+  .container {
+    width: 30%; 
+    margin-left: 400px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    margin-left: 600px;
+  }
+} 

@@ -1,0 +1,41 @@
+.base {
+    width: 100%;
+    
+    box-sizing: border-box;
+
+    padding: 60px 32px;
+    background: var(--cinza-claro);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.card {
+    padding: 16px;
+    margin-bottom: 24px;
+
+    border: solid 2px var(--azul-escuro);
+    border-radius: 8px;
+}
+
+.card:hover {
+    color: var(--azul-claro);
+    border-color: var(--azul-claro);
+}
+
+
+
+@media screen and (min-width: 1366px) {
+    .base {
+        display:flex ;
+        flex-direction: row;
+        gap: 16px;
+    }
+}

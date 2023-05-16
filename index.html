@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/cabecalho.css" />
+  <link rel="stylesheet" href="../css/banner.css" />
+  <link rel="stylesheet" href="../css/texto.css" />
+  <link rel="stylesheet" href="../css/banner2.css" />
+  <link rel="stylesheet" href="../css/atividades.css" />
+  <link rel="stylesheet" href="../css/banner3.css" />
+
+  <title>Foccus</title>
+
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar_links">
+      <div>
+        <button class="btn" id="btn">&#8801</button>
+        <div class="dropdown" id="dropdown">
+          <a href="#">Início</a>
+          <a href="#">Atividades</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+      <div>
+        <button class="btnForm">Faça parte do grupo</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section class="banner">
+        <div class="mexeMinhaLua" id="minhaLua">
+          <model-viewer src="/img/moon.glb" poster="/img/moon.webp" shadow-intensity="0" auto-rotate
+            rotation-per-second="30deg" class="lua" id="modelLua"> </model-viewer>
+        </div>
+        <img src="/img/bg.jpg" id="bg">
+        <img src="/img/mountain.png" id="mountain">
+        <img src="/img/road.png" id="road">
+        <h3 id="textaa">Foccus</h3>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Seja bem-vindo ao Foccus! Grupo de aspirantes a astrônomos!</h2>
+          <p>Somos um grupo apaixonado pela exploração do universo e estamos dedicados a aprender mais sobre os
+            mistérios do espaço.</p>
+          <br>
+          <p>Neste site, você encontrará informações sobre nossas atividades e projetos relacionados à astronomia, bem
+            como recursos e materiais para ajudá-lo a iniciar sua própria jornada de descoberta do cosmos.</p>
+          <br>
+          <p>Junte-se a nós enquanto nos aventuramos no vasto e fascinante mundo da astronomia!</p>
+        </div>
+      </section>
+
+      <section class="photos">
+        <div class="controls">
+          <ul>
+            <li><a href="#slide1"></a></li>
+            <li><a href="#slide2"></a></li>
+            <li><a href="#slide3"></a></li>
+            <li><a href="#slide4"></a></li>
+          </ul>
+        </div>
+
+        <div class="slider">
+          <div class="slide" id="slide1">
+            <img src="/img/pexels-pavel-danilyuk-9143821.jpg">
+          </div>
+          <div class="slide" id="slide2">
+            <img src="/img/pexels-lucas-pezeta-2106759.jpg">
+          </div>
+          <div class="slide" id="slide3">
+            <img src="/img/pexels-felix-mittermeier-1329917.jpg">
+          </div>
+          <div class="slide" id="slide4">
+            <img src="/img/pexels-min-an-920534.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="base">
+          <h2>Atividades</h2>
+          <div class="card">
+            <h3>Observação do céu:</h3>
+            <p>Mensalmente marcamos observações astronômicas noturnas em telescópios, lunetas ou binóculos, para
+            observar planetas, estrelas, galáxias e outros objetos celestes.</p>
+          </div>
+          <div class="card">
+            <h3>Palestras e apresentações:</h3>
+            <p>Organizamos palestras e apresentações sobre astronomia, onde os membros compartilham suas experiências, conhecimentos e informações sobre diferentes tópicos relacionados à astronomia.</p>
+          </div>
+          <div class="card">
+            <h3>Projetos de pesquisa:</h3>
+            <p>Nosso grupo colabora em projetos de pesquisa astronômica, como a busca por exoplanetas ou o estudo de estrelas variáveis.</p>
+          </div>
+          <div class="card">
+            <h3>Eventos públicos:</h3>
+            <p>Participamos e organizamos eventos públicos para promover a astronomia, como feiras de ciência, noites de observação pública, palestras em escolas ou apresentações para o público em geral.</p>
+          </div>
+          <div class="card">
+            <h3>Cursos e workshops:</h3>
+            <p>Ministramos cursos e workshops para ensinar habilidades relacionadas à astronomia, como astrofotografia, astrobiologia ou astronomia básica para iniciantes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-1">
+        <p class="frase"> " A Astronomia me fascina, pois quanto mais sabemos sobre o quão grande é o universo, mais sabemos o quão somos pequenos.A beleza dos astros me mostra o quão perfeito é o espaço. A deformação no espaço-tempo me mostra a grande perfeição das leis que regem o universo. "</p>
+        <p class="autor">João Marcos Brandet</p>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Projetos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+            dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et,
+            magnam eius!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+            dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et,
+            magnam eius!
+          </p>
+        </div>
+      </section>
+
+
+    </main>
+  </div>
+  <script src="../js/cabecalho.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  <script src="../js/banner.js"></script>
+</body>
+
+</html>
