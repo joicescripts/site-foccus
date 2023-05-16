@@ -1,16 +1,51 @@
+body {
+    background-color: var(--branco);
+}
+
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 8px;
+
+    box-sizing: border-box;
+    padding: 80px;
     
-    padding: 100px 300px;
 }
 
 .input-padrao {
+    background-color: var(--cinza-claro);
     border-radius: 16px;
     border: none;
 
     height: 32px;
 }
+
+.seletor_form {
+    margin: 32px 0;
+
+}
+
+.input-padrao.mensagem {
+    height: 150px;
+    margin-bottom: 32px;
+}
+
+input.botao_enviar {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    font-size: 16px;
+    
+    border: none;
+    height: 48px;
+    border-radius: 8px;
+
+    margin-top: 32px;
+}
+
+input.botao_enviar:hover {
+    opacity: .5;
+}
+
 
 @media screen and (min-width: 1024px){}

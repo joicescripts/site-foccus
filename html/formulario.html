@@ -7,28 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/testeCabecalho.css">
+    <link rel="stylesheet" href="../css/cabecalho.css">
     <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../index.html">
 
     <title>Faça parte do grupo</title>
 </head>
 
 <body>
     <header class="navbar">
-        <div class="clickDropdown">
-            <button class="btn" id="btn">Foccus</button>
+        <div class="navbar_links">
+          <div>
+            <button class="btn" id="btn">&#8801</button>
             <div class="dropdown" id="dropdown">
-                <a href="#">ínício</a>
-                <a href="#">Atividades</a>
-                <a href="#">Projetos</a>
+              <a href="../index.html">Início</a>
+              <a href="#atividade_form">Atividades</a>
+              <a href="#contato">Contato</a>
             </div>
+          </div>
+          <div>
+            <button class="btnForm"><a href="./html/formulario.html">Faça parte do grupo</a></button>
+          </div>
         </div>
-        <div>
-            <button class="btnForm">Faça parte do grupo</button>
-        </div>
-    </header>
+      </header>
 
-    <main>
+    <main class="base_form">
         <form>
             <!-- As labels se vinculam ao input pelo id -->
             <!-- O id do input deve ser igual ao for da label -->
@@ -36,26 +40,26 @@
             <input type="text" id="nomesobrenome" class="input-padrao" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="seuemail@dominio.com" class="input-padrao" required>
+            <input type="email" id="email" placeholder="    seuemail@dominio.com" class="input-padrao" required>
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" placeholder="(xx) x xxxx-xxxx" class="input-padrao" required>
+            <input type="tel" id="telefone" placeholder="    (xx) x xxxx-xxxx" class="input-padrao" required>
 
             <label for="cep">CEP</label>
-            <input type="cep" id="cep" placeholder="00000-000" class="input-padrao" required>
+            <input type="cep" id="cep" placeholder="     00000-000" class="input-padrao" required>
 
             <label for="logradouro">Logradouro</label>
             <input type="logradouro" id="logradouro" class="input-padrao" required>
 
-            <label for="cep">CEP</label>
-            <input type="cep" id="cep" placeholder="00000-000" class="input-padrao" required>
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" class="input-padrao" required>
 
 
 
             <!-- Seletor dropdown -->
-            <fieldset>
+            <fieldset class="seletor_form">
                 <legend>De quais atividades você gostaria de participar?</legend>
-                <select>
+                <select id="atividade_form">
                     <option>Observação de céu</option>
                     <option>Palestras e apresentações</option>
                     <option>Projetos de pesquisa</option>
@@ -65,14 +69,25 @@
             </fieldset>
 
             <label for="mensagem">Mensagem</label>
-            <textarea cols="60" rows="10" id="mensagem" class="input-padrao" required></textarea>
+            <textarea cols="60" rows="10" id="mensagem" class="input-padrao mensagem" required></textarea>
 
             <!-- Check-box -->
             <label><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" class="botao_enviar" value="Enviar">
         </form>
     </main>
+    <footer id="contato" class="base_rodape">
+        <div class="rodape">
+          <h2>Foccus</h2>
+          <div class="rodape_links">
+            <img src="../img/botao-de-simbolo-de-telefone.png" alt="Ícone de telefone"><a href="#"></a><br>
+            <img src="../img/instagram.png" alt="Logo Instagram"><a href="#"></a><br>
+            <img src="../img/enviar.png" alt="Ícone de email"><a href="#"></a><br>
+          </div>
+          <div><p>&#169; Copyright</p></div>
+        </div>
+      </footer>
     <script src="../js/cabecalho.js"></script>
 </body>
 
