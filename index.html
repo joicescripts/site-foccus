@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="../css/banner.css" />
   <link rel="stylesheet" href="../css/texto.css" />
   <link rel="stylesheet" href="../css/banner2.css" />
-  <link rel="stylesheet" href="../css/atividades.css" />
   <link rel="stylesheet" href="../css/banner3.css" />
+  <link rel="stylesheet" href="../css/atividades.css" />
+  <link rel="stylesheet" href="../css/rodape.css" />
+  <link rel="stylesheet" href="index.html">
+  <link rel="stylesheet" href="./html/formulario.html">
 
   <title>Foccus</title>
 
@@ -24,13 +27,13 @@
       <div>
         <button class="btn" id="btn">&#8801</button>
         <div class="dropdown" id="dropdown">
-          <a href="#">Início</a>
-          <a href="#">Atividades</a>
-          <a href="#">Contato</a>
+          <a href="index.html">Início</a>
+          <a href="#atividades">Atividades</a>
+          <a href="#contato">Contato</a>
         </div>
       </div>
       <div>
-        <button class="btnForm">Faça parte do grupo</button>
+        <button class="btnForm"><a href="./html/formulario.html">Faça parte do grupo</a></button>
       </div>
     </div>
   </header>
@@ -87,7 +90,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="atividades">
         <div class="base">
           <h2>Atividades</h2>
           <div class="card">
@@ -118,26 +121,21 @@
         <p class="frase"> " A Astronomia me fascina, pois quanto mais sabemos sobre o quão grande é o universo, mais sabemos o quão somos pequenos.A beleza dos astros me mostra o quão perfeito é o espaço. A deformação no espaço-tempo me mostra a grande perfeição das leis que regem o universo. "</p>
         <p class="autor">João Marcos Brandet</p>
       </section>
-
-      <section class="module content">
-        <div class="container">
-          <h2>Projetos</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-            dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et,
-            magnam eius!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
-            dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et,
-            magnam eius!
-          </p>
-        </div>
-      </section>
-
-
     </main>
-  </div>
+
+  <footer id="contato" class="base_rodape">
+    <div class="rodape">
+      <h2>Foccus</h2>
+      <div class="rodape_links">
+        <img src="./img/botao-de-simbolo-de-telefone.png" alt="Ícone de telefone"><a href="#"></a><br>
+        <img src="./img/instagram.png" alt="Logo Instagram"><a href="#"></a><br>
+        <img src="./img/enviar.png" alt="Ícone de email"><a href="#"></a><br>
+      </div>
+      <div><p>&#169; Copyright</p></div>
+    </div>
+  </footer>
+</div>
+
   <script src="../js/cabecalho.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   <script src="../js/banner.js"></script>

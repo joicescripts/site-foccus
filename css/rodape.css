@@ -1,0 +1,34 @@
+.base_rodape {
+    background-color: var(--cinza-claro);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    width: 100%;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.rodape h2 {
+    font-size: 40px;
+}
+
+.rodape_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.rodape_links img {
+    width: 40px;
+}
+
+.rodape_links img:hover {
+    opacity: .5;
+}
