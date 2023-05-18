@@ -40,26 +40,62 @@
             <input type="text" id="nomesobrenome" class="input-padrao" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="    seuemail@dominio.com" class="input-padrao" required>
+            <input type="email" id="email" placeholder="seuemail@dominio.com" class="input-padrao" required>
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" placeholder="    (xx) x xxxx-xxxx" class="input-padrao" required>
+            <input type="tel" id="telefone" placeholder="(xx) x xxxx-xxxx" class="input-padrao" required>
 
             <label for="cep">CEP</label>
-            <input type="cep" id="cep" placeholder="     00000-000" class="input-padrao" required>
-
+            <input type="cep" id="cep" placeholder="00000-000" class="input-padrao" required>
+            <div id="erro" class="erro"></div>
+            
             <label for="logradouro">Logradouro</label>
             <input type="logradouro" id="logradouro" class="input-padrao" required>
-
+            
             <label for="bairro">Bairro</label>
             <input type="text" id="bairro" class="input-padrao" required>
+            
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" class="input-padrao" required>
 
-
+            <div class="formulario__campo">
+              <label for="estado">UF</label>
+              <select id="estado" name="estado" class="input-padrao">
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="EX">Estrangeiro</option>
+              </select>
+          </div>
 
             <!-- Seletor dropdown -->
             <fieldset class="seletor_form">
                 <legend>De quais atividades você gostaria de participar?</legend>
-                <select id="atividade_form">
+                <select id="atividade_form" class="input-padrao">
                     <option>Observação de céu</option>
                     <option>Palestras e apresentações</option>
                     <option>Projetos de pesquisa</option>
@@ -89,6 +125,7 @@
         </div>
       </footer>
     <script src="../js/cabecalho.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 
 </html>

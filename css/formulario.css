@@ -10,20 +10,30 @@ form {
 
     box-sizing: border-box;
     padding: 80px;
-    
+
+    width: 100%;
 }
 
 .input-padrao {
     background-color: var(--cinza-claro);
-    border-radius: 16px;
+    border-radius: 4px;
     border: none;
 
     height: 32px;
 }
 
+.erro{
+    color: var(--vermelho);
+    font-size: 12px;
+}
+
+.formulario__campo {
+    margin-top: 32px;
+}
+
 .seletor_form {
     margin: 32px 0;
-
+    border: none;
 }
 
 .input-padrao.mensagem {
@@ -48,4 +58,9 @@ input.botao_enviar:hover {
 }
 
 
-@media screen and (min-width: 1024px){}
+@media screen and (min-width: 1024px){
+    form {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
